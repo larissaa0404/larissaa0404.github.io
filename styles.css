@@ -462,7 +462,7 @@ a{
 @media screen and (max-width: 576px) {
     .container{
         zoom: 70%;
-        padding-left:1rem;
+        margin-left:1rem;
     }
     .about{
         width: 50%;
