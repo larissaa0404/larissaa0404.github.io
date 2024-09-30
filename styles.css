@@ -49,8 +49,6 @@ header{
 /* body  */
 body {
     max-width: 100%;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.9rem;
@@ -213,18 +211,18 @@ section{
 .open{
     position: absolute;
     z-index: 999;
-    width: 40%;
+    width: 65%;
     height: 30%;
     opacity: 1;
     justify-content: center;
     align-items: center;
     padding-left: 25%;
-    padding-top: 10%;
-    zoom: 50%;
+    padding-top: 15%;
 }
 .open img{
+    width: 100%;
     display: block;
-    border-radius: 2rem;
+    border-radius: 1rem;
     box-shadow: 0px 0px 3rem rgb(90, 217, 221);
 }
 .open .cancel{
@@ -364,10 +362,12 @@ a{
         margin-left: 2rem;
     }
     .open{
-        width: 30%;
-        zoom: 35%;
-        padding-top: 50%;
-        padding-left: 15%;
+        padding-top: 30%;
+        padding-left: 17%;
+    }
+    .open .cancel svg {
+        width: 2rem;
+        height: 2rem;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -428,10 +428,8 @@ a{
     }
     .open{
         padding-left: 5%;
-        zoom: 30%;
         padding-top: 80%;
     }
-
 }
 @media (min-width: 640px) {
     .sm\:col-span-6 {
@@ -455,11 +453,13 @@ a{
       width: 50%;
    }
    .open{
-    zoom: 25%;
-    width: 5%;
-    padding-top: 120%;
-    padding-left: 5%;
-}
+       padding-top: 80%;
+       padding-left: 5%;
+   }
+   .cancel svg{
+        width: 5rem;
+        height: 5rem;
+    }
 }
 @media screen and (max-width: 576px) {
     .container{
@@ -483,8 +483,14 @@ a{
    .contact p{
      font-size: 1rem;
    }
-   .open{
+   .open {
      padding-top: 200%;
+     padding-left: 1rem;
+     width: 25rem;
+     height: 25rem;
+   }
+   .open img{
+    width: 100%;
    }
 }
 @media screen and (max-width: 475px){
@@ -515,5 +521,8 @@ a{
         width: 1rem;
         height: 1rem;
         margin-right: .25rem;
+    }
+    .open{
+        width: 20rem;
     }
 }
