@@ -48,8 +48,9 @@ header{
 
 /* body  */
 body {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.9rem;
     /* background-color:  #a17676; */
@@ -406,7 +407,7 @@ a{
         width: 80%;
     }
 }
-@media  screen and (max-width: 780px) {
+@media only screen and (max-width: 780px) {
    .container{
         zoom: 85%;
 
@@ -462,10 +463,9 @@ a{
 @media screen and (max-width: 576px) {
     .container{
         zoom: 70%;
-        margin-left:1rem;
     }
     .about{
-        width: 50%;
+        width: 23rem;
     }
     .project{
         display: flex;
@@ -474,15 +474,45 @@ a{
         align-items: start;
     }
     .text{
-        width: 50%;
+        width: 22rem;
     }
    .element{
-      width: 40%;
+      width: 15rem;
    }
    .contact p{
      font-size: 1rem;
    }
    .open{
-    padding-top: 200%;
+     padding-top: 200%;
    }
+}
+@media screen and (max-width: 475px){
+    .container{
+        zoom: 40rem;
+        padding: 0.5rem;
+    }
+    .hero-inner{
+        width: 30rem;
+    }
+    .about{
+        width: 18rem;
+        font-size: 1rem;
+    }
+    .courses{
+        width: 15rem;
+    }
+    .element{
+        width: 13rem;
+     }
+     .text{
+        width: 17rem;
+    }
+    .contact{
+        gap: .5rem;
+    }
+    .contact svg{
+        width: 1rem;
+        height: 1rem;
+        margin-right: .25rem;
+    }
 }
